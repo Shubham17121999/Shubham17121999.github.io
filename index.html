@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" id="nav-menu">
       <div class="logo">Shubham Kulkarni</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="nav-link home"><a  href="#home">Home</a></li>         
+          <li class="nav-link about"><a href="#about">About</a></li>
+          <li  class="nav-link skills"><a href="#experience">Skills</a></li>
+          <li class="nav-link projects"><a href="#projects">Projects</a></li>
+          <li class="nav-link contact"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Shubham Kulkarni</div>
+      <div class="logo"  id="user-detail-name">Shubham Kulkarni</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -36,17 +37,20 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
+    <section id="profile" id="home">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img class="home-img" src="./assets/profile-pic.png" alt="John Doe profile picture" />
       </div>
-      <div class="section__text">
+      <div class="section__text"  id="user-detail-intro">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Shubham Kulkarni</h1>
         <p class="section__text__p2">Java Backend Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
+            class="nav-link resume"
+            id="resume-button-1"
+            id="resume-button-2"
             onclick="window.open('./assets/resume-example.pdf')"
           >
             Download CV
@@ -60,18 +64,20 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
+            id="contact-linkedin"
             onclick="location.href='https://www.linkedin.com/in/shubham-kulkarni-103357224/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
-            class="icon"
+            class="icon"  
+            id="contact-github"
             onclick="location.href='https://github.com/Shubham17121999'"
           />
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="about section" >
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -117,7 +123,7 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="experience" id="skills">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div class="experience-details-container">
@@ -130,9 +136,10 @@
                   src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
+                  class="skills-card-img"
                 />
                 <div>
-                  <h3>HTML</h3>
+                  <h3 class="skills-card-name">HTML</h3>
                   <p>Experienced</p>
                 </div>
               </article>
@@ -251,7 +258,7 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
+    <section id="projects" id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -264,16 +271,18 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title" class="project-title">Project One</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
+                class="project-github-link"
                 onclick="location.href='https://github.com/'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
+                class="project-deployed-link"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
