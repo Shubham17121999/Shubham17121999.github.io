@@ -31,12 +31,16 @@ a,
 nav,
 .nav-links {
   display: flex;
+  position: sticky;
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-links {
