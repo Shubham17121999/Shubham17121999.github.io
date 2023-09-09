@@ -361,6 +361,8 @@ article .icon {
 
 #projects {
   position: relative;
+  
+
 }
 
 .color-container {
@@ -433,4 +435,91 @@ footer {
 
 footer p {
   text-align: center;
+}
+/* GitHub Section Styles */
+
+/* Style the GitHub container */
+.calendar{
+  background-color: #f4f4f4;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* Style the GitHub header */
+#github h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Style the GitHub calendar container */
+.calendar {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the GitHub calendar title */
+.calendar h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.calendar31 {
+  padding-top: 700px;
+  position: relative;
+  /* Set the width, height, and other properties as needed */
+}
+
+
+
+
+
+.calendar3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Your div's styles */
+}
+
+/* Style the GitHub calendar itself (using GitHub Calendar library styles) */
+
+
+/* Style the GitHub statistics container */
+#github-stats {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the GitHub statistics title */
+#github-stats h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Style the GitHub statistics cards (using GitHub Readme Stats library styles) */
+
+
+/* Media Queries for GitHub Section */
+
+@media (max-width: 768px) {
+  /* Adjust GitHub section styles for smaller screens here */
+  #github {
+    padding: 2rem 0;
+  }
+
+  .calendar {
+    padding: 1rem;
+  }
+
+  #github-stats {
+    padding: 1rem;
+  }
 }
