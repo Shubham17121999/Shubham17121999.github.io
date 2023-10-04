@@ -75,6 +75,9 @@ $(document).ready(function(){
 
 
 
-
+document.querySelector("#resume-button-2").addEventListener("click",()=>{
+    window.location.href="https://drive.google.com/file/d/1wwKBZNeA9Yko1xeKVI49uT5KclbL7Esd/view";
+   window.open("https://drive.google.com/file/d/1wwKBZNeA9Yko1xeKVI49uT5KclbL7Esd/view","_blank") ;
+ })
 
 
