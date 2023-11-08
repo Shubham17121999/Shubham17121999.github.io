@@ -80,4 +80,9 @@ document.querySelector("#resume-button-2").addEventListener("click",()=>{
    window.open("https://drive.google.com/file/d/1wwKBZNeA9Yko1xeKVI49uT5KclbL7Esd/view","_blank") ;
  })
 
+ document.querySelector("#resume-button-1").addEventListener("click",()=>{
+ 
+    window.open("https://drive.google.com/file/d/1wwKBZNeA9Yko1xeKVI49uT5KclbL7Esd/view","_blank") ;
+  })
+ 
 
